@@ -1,5 +1,11 @@
 package Les43hw1_House;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
   //Создайте абстрактный класс "Дом". В качестве аргумента конструктора принимайте адрес.
@@ -15,14 +21,15 @@ public class Main {
   // дома и один многоквартирный.
 
   //Выведите информацию о домах в списке с использованием цикла for-each.
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
 
-    House houseSting = new PrivatHouse("Sting street, 47");
-    House houseMadonna = new PrivatHouse("Avenu Madonna, 15");
-    House anthill = new ApartmentHouse("Муравейник, 21");
-    System.out.println(houseSting + "\n" + houseMadonna + "\n" + anthill );
+    List<House> houses = new ArrayList<>();
+    houses.add(new PrivatHouse("Sting street, 47"));
+    houses.add(new PrivatHouse("Avenu Madonna, 15"));
+    houses.add(new ApartmentHouse("Муравейник, 21", 11));
 
-    anthill.setEntrance(7);
-    System.out.println(anthill);
+    for (House i : houses) {
+    System.out.print(houses);
+    }
   }
 }

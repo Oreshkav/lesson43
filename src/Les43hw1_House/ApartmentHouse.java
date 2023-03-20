@@ -4,8 +4,9 @@ public class ApartmentHouse extends House {
 
   public int entrance;
 
-  public ApartmentHouse(String address) {
+  public ApartmentHouse(String address, int entrance) {
     super(address);
+    this.entrance = entrance;
   }
 
   public int getEntrance() {
