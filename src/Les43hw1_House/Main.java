@@ -29,7 +29,7 @@ public class Main {
     houses.add(new ApartmentHouse("Муравейник, 21", 11));
 
     for (House i : houses) {
-    System.out.print(houses);
+    System.out.println(i);
     }
   }
 }

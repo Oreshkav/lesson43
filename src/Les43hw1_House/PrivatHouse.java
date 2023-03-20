@@ -8,7 +8,6 @@ public class PrivatHouse extends House {
 
   @Override
   public String toString() {
-    return String.format("Частный дом расположен по адресу: %s и в нем %d квартир.", address,
-        entrance);
+    return String.format("Частный дом расположен по адресу: %s.", address);
   }
 }
