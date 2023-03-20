@@ -20,4 +20,6 @@ public class House {
     return "Дом расположен по адресу: " + address;
   }
 
+  public void destroy() {
+  }
 }

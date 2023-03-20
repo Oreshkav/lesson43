@@ -33,5 +33,9 @@ public class Main {
     for (House i : houses) {
     System.out.println(i);
     }
+
+    for (int i = 0; i < houses.size(); ++i) {
+      houses.get(i).destroy();
+    }
   }
 }

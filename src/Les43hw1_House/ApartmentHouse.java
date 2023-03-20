@@ -22,4 +22,9 @@ public class ApartmentHouse extends House {
     return ("Многоквартирный дом расположен по адресу: " + address + " и в нем " + entrance +
         " квартир.\n");
   }
+
+  @Override
+  public void destroy() {
+    System.out.println("You have destroyed Apartmenthouse with " + entrance + " apartaments.");
+  }
 }

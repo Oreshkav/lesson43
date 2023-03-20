@@ -10,4 +10,9 @@ public class PrivatHouse extends House {
   public String toString() {
     return String.format("Частный дом расположен по адресу: %s.", address);
   }
+
+  @Override
+  public void destroy() {
+    System.out.println("You have destroyed Privat House.");
+  }
 }
